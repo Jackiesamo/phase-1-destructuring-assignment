@@ -46,3 +46,84 @@ const nestedMuppet = {
 // 7. Use destructuring to assign all variables using the keys as the variable names
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+
+// index.js
+
+// ---------- String Destructuring ----------
+// index.js
+
+// ---------- String Destructuring ----------
+// index.js
+
+// ---------- String Destructuring ----------
+const animalSounds = {
+  moo: "cow",
+  neigh: "horse",
+  baa: "sheep",
+  oink: "pig",
+  cluck: "chicken"
+};
+
+const { moo, neigh, baa, oink, cluck } = animalSounds;
+
+const animalNames = {
+  bessie: "cow",
+  dolly: "sheep",
+  babe: "pig",
+  little: "chicken"
+};
+
+const { bessie, dolly, babe, little } = animalNames;
+
+const animalColors = {
+  blackAndWhite: "cow",
+  black: "sheep",
+  pink: "pig"
+};
+
+const { blackAndWhite, black, pink } = animalColors;
+
+
+// ---------- Array Destructuring ----------
+const Colors = [
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "indigo",
+  "violet"
+];
+
+// Destructure by names
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+
+// Destructure by initials
+const [r, o, y, g, b, , v] = colors;
+
+// Indigo separately
+const [, , , , , indg] = colors;
+
+
+// ---------- Object Destructuring ----------
+const Muppet = {
+  muppetName: "Miss Piggy",
+  color: "pink",
+  song: "Never Before, Never Again",
+  job: "Cast member of The Muppet Show",
+  partner: "Kermit",
+  songs: [
+    "The Rainbow Connection",
+    "Moving Right Along",
+    "Bein' Green",
+    "I Hope That Something Better Comes Along"
+  ],
+  nested: {
+    job: "Host of The Muppet Show",
+    partner: "Miss Piggy"
+  }
+};
+
+const { muppetName, color, song, job, partner } = muppet;
+const { songs: [, song2, , song4], nested: { job: nestedJob, partner: nestedPartner } } = muppet;
+
