@@ -24,16 +24,22 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+// Strings
 const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
 
 const [bessie, , dolly, babe, little] = farmAnimals.split(' ');
 
 const [blackAndWhite, , black, pink] = farmAnimals.split(' ');
 
+// Arrays
+
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+
 const [r, o, y, g, b, , v] = colors;
 
 const [, , , , , indg] = colors;
 
+// Objects
 
 const { muppetName, color, song, job, partner } = muppet;
 
